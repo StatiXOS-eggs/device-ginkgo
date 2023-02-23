@@ -312,6 +312,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/init.xiaomiparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.xiaomiparts.rc
 
+# Platform
+PRODUCT_BOARD_PLATFORM := trinket
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
